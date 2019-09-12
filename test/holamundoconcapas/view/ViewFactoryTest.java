@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package holamundoconcapas.model;
+package holamundoconcapas.view;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author fanfu
  */
-public class ModelFactoryTest {
+public class ViewFactoryTest {
     
-    public ModelFactoryTest() {
+    public ViewFactoryTest() {
     }
     
     @BeforeClass
@@ -38,13 +38,10 @@ public class ModelFactoryTest {
     }
 
     /**
-     * Test of getModel method, of class ModelFactory.
+     * Test of getView method, of class ViewFactory.
      */
     @Test
-    public void testGetModel() {
-        ModelFactory factModelo = new ModelFactory();
-        assertNotNull(factModelo.getModel());
-        
+    public void testGetView() {
         
     }
     
