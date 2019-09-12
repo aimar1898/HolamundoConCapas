@@ -9,7 +9,7 @@ package holamundoconcapas.model;
  *
  * @author fanfu
  */
-public class ModelImplementation {
+public class ModelImplementation implements ModelInterface {
     
     public String getGreeting() {
         return "Hello World!";

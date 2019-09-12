@@ -9,6 +9,9 @@ package holamundoconcapas.view;
  *
  * @author fanfu
  */
-public class ViewImplementation {
+public class ViewImplementation implements ViewInterface {
     
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
+    }
 }

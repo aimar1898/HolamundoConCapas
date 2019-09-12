@@ -11,4 +11,8 @@ package holamundoconcapas.view;
  */
 public class ViewFactory {
     
+    public ViewInterface getView() {
+        return new ViewImplementation();
+    }
+    
 }

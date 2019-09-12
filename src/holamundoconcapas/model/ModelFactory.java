@@ -11,4 +11,7 @@ package holamundoconcapas.model;
  */
 public class ModelFactory {
     
+    public ModelInterface getModel() {
+        return new ModelImplementation();
+    }
 }
