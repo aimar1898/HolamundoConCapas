@@ -5,11 +5,18 @@
  */
 package holamundoconcapas.model;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author fanfu
  */
-public interface ModelInterface {
+public class FileModelImplementation implements Model {
+
+    @Override
+    public String getGreeting() {
+       return ResourceBundle.getBundle("holamundoconcapas.model.Parameters").getString("greeting");
+    }
+
     
-    public String getGreeting();
 }

@@ -10,8 +10,11 @@ package holamundoconcapas.model;
  * @author fanfu
  */
 public class ModelFactory {
-    
-    public ModelInterface getModel() {
-        return new ModelImplementation();
+    /**
+     * 
+     * @return the ModelImplementation implementation.
+     */
+    public Model getModel() {
+        return new FileModelImplementation();
     }
 }

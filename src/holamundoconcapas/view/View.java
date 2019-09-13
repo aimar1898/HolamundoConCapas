@@ -9,13 +9,10 @@ package holamundoconcapas.view;
  *
  * @author fanfu
  */
-public class ViewFactory {
+public interface View {
     /**
      * 
-     * @return the ViewImplementation implementation.
+     * @param greeting A String thet contains a greeting.
      */
-    public View getView() {
-        return new SwingViewImplementation();
-    }
-    
+    public void showGreeting(String greeting);
 }

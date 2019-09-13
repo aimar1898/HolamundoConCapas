@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package holamundoconcapas.view;
+package holamundoconcapas.model;
 
 /**
  *
  * @author fanfu
  */
-public interface ViewInterface {
-    
-    public void showGreeting(String greeting);
+public interface Model {
+    /**
+     * Get a greeting.
+     * @return a String representing a greeting.
+     */
+    public String getGreeting();
 }

@@ -10,6 +10,10 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+/**
+ * Hacemos un import estático de Assert para poder importar todos los métodos
+ * de la clase Assert.
+ */
 import static org.junit.Assert.*;
 
 /**
@@ -44,8 +48,6 @@ public class ModelFactoryTest {
     public void testGetModel() {
         ModelFactory factModelo = new ModelFactory();
         assertNotNull(factModelo.getModel());
-        
-        
     }
     
 }

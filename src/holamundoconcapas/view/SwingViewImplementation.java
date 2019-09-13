@@ -5,16 +5,20 @@
  */
 package holamundoconcapas.view;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fanfu
  */
-public class ViewImplementation implements View {
-    /**
-     * 
-     * @param greeting A String that contains a greeting.
-     */
+public class SwingViewImplementation implements View {
+
+    @Override
     public void showGreeting(String greeting) {
-        System.out.println(greeting);
+        JFrame frame1 = new JFrame();
+        JOptionPane.showMessageDialog(frame1, greeting);
+        frame1.dispose();
     }
+    
 }
