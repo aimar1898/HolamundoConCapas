@@ -7,19 +7,29 @@ package holamundoconcapas.controller;
 
 import holamundoconcapas.model.Model;
 import holamundoconcapas.view.View;
+import java.util.logging.Logger;
 
 /**
  *
- * @author fanfu
+ * @author aimar
  */
 public class Controller {
+    private static final Logger LOGGER=Logger.getLogger("holamundoconcapas.controller.Controller");
     /**
-     * 
+     * Este método recibe la vista y el modelo e inicia la aplicación.
      * @param view the view object.
      * @param model the model object.
      */
     public void run(View view,Model model) {
-        String greeting = model.getGreeting();
-        view.showGreeting(greeting);
+        try {
+            LOGGER.info("Starting run method");
+            //String greeting = model.getGreeting();
+            //view.showGreeting(greeting);
+            view.showGreeting(model.getGreeting());
+            LOGGER.info("Ending run method");
+        } catch (Exception e) {
+            LOGGER.severe(e.getMessage());
+        }
+        
     }
 }

@@ -5,6 +5,7 @@
  */
 package holamundoconcapas.view;
 
+import java.util.logging.Logger;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
@@ -15,23 +16,36 @@ import javafx.stage.Stage;
  * Convertimos la clase en aplicación haciendo que herede de javafx.application.Aplication.
  */
 public class JavaFxViewImplementation extends javafx.application.Application implements View {
+    private static final Logger LOGGER=Logger.getLogger("holamundoconcapas.view.JavaFXViewImplementation");
 
     private String greeting;
-    
+    /**
+     * This method creates a loader, loads the elements of the stage, creates
+     * a controller. Sends the greeting, the stage and initialates it.
+     * @param stage A stage object.
+     * @throws Exception
+     */
     @Override
     public void start(Stage stage) throws Exception {
         try {
+            LOGGER.info("Starting start method");
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Ventana.fxml"));
             Parent root = (Parent)loader.load();
             FXMLDocumentController viewController = ((FXMLDocumentController)loader.getController());
             viewController.setGreeting(greeting);
             viewController.setStage(stage);
             viewController.initStage(root);
+            LOGGER.info("Ending start method");
         } catch(Exception e) {
-            e.printStackTrace();
+            LOGGER.severe(e.getMessage());
+            
         }
     }
-
+    
+    /**
+     * 
+     * @param greeting A string that contains the greeting.
+     */
     @Override
     public void showGreeting(String greeting) {
        launch(greeting);

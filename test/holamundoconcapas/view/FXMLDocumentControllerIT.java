@@ -7,7 +7,6 @@ package holamundoconcapas.view;
 
 import javafx.stage.Stage;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import static org.testfx.api.FxAssert.verifyThat;
 import org.testfx.framework.junit.ApplicationTest;
 import static org.testfx.matcher.control.LabeledMatchers.hasText;

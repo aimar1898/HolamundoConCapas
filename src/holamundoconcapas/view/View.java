@@ -7,12 +7,9 @@ package holamundoconcapas.view;
 
 /**
  *
- * @author fanfu
+ * @author aimar
  */
 public interface View {
-    /**
-     * 
-     * @param greeting A String thet contains a greeting.
-     */
+    
     public void showGreeting(String greeting);
 }
