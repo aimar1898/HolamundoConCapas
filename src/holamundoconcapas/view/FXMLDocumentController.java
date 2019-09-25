@@ -5,8 +5,6 @@
  */
 package holamundoconcapas.view;
 
-
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -18,13 +16,12 @@ import javafx.stage.WindowEvent;
 
 /**
  *
- * @author fanfu
+ * @author aimar
  */
 public class FXMLDocumentController {
     
     @FXML
     private Label greetingLbl;
-    private Button closeBtn;
     private String greeting;
     private Stage stage;
     

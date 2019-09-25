@@ -11,7 +11,7 @@ import holamundoconcapas.view.ViewFactory;
 
 /**
  *
- * @author fanfu
+ * @author aimar
  */
 public class Aplication {
     
