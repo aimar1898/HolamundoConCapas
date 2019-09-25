@@ -7,7 +7,7 @@ package holamundoconcapas.view;
 
 /**
  *
- * @author fanfu
+ * @author aimar
  */
 public class ViewFactory {
     /**
@@ -15,7 +15,7 @@ public class ViewFactory {
      * @return the ViewImplementation implementation.
      */
     public View getView() {
-        return new SwingViewImplementation();
+        return new JavaFxViewImplementation();
     }
     
 }
